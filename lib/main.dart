@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
+import 'main_app.dart';
+
 void main() {
   runApp(const MainApp());
 }
+<<<<<<< HEAD
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -25,3 +28,5 @@ class MainApp extends StatelessWidget {
     );
   }
 }
+=======
+>>>>>>> prepare_material_app

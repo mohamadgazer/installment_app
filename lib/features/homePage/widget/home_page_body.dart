@@ -8,7 +8,7 @@ class HomePageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('7th test'),
+      child: Text('8th test'),
     );
   }
 }

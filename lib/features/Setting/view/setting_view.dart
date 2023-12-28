@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../widget/home_page_body.dart';
 
 class SettingPageView extends StatelessWidget {
-  static String id = "/settingid";
+  static const String id = "/settingid";
   const SettingPageView({
     super.key,
   });

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widget/home_page_body.dart';
+import '../widget/setting_body.dart';
 
 class SettingPageView extends StatelessWidget {
   static const String id = "/settingid";
@@ -11,7 +11,7 @@ class SettingPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: HomePageBody(),
+      body: SettingBody(),
     );
   }
 }

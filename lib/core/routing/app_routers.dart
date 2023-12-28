@@ -6,14 +6,14 @@ import 'package:installment/features/homePage/view/home_page_view.dart';
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Routes.home:
+      case AppRoutes.home:
         return MaterialPageRoute(
           builder: (context) {
             return const HomePageView();
           },
         );
 
-      case Routes.home:
+      case AppRoutes.home:
         return MaterialPageRoute(
           builder: (context) {
             return const SettingPageView();

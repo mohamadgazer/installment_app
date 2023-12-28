@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:installment/core/app_local.dart';
 import 'package:installment/core/routing/app_routers.dart';
+import 'package:installment/core/routing/routers.dart';
 import 'package:installment/generated/l10n.dart';
 
 class MainApp extends StatelessWidget {
@@ -18,6 +19,7 @@ class MainApp extends StatelessWidget {
         localizationsDelegates: localizationsDelegates,
         supportedLocales: S.delegate.supportedLocales,
         locale: const Locale("ar"),
+        initialRoute: AppRoutes.home,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );

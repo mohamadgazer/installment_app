@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       localizationsDelegates: localizationsDelegates,
       supportedLocales: S.delegate.supportedLocales,
-      // locale: locale.locale,
+      locale: const Locale("ar"),
       home: const HomePageView(),
     );
   }

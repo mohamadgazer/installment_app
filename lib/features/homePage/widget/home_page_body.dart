@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:installment/generated/l10n.dart';
 
 class HomePageBody extends StatelessWidget {
   const HomePageBody({
@@ -7,8 +8,8 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('Hi mohamad'),
+    return Center(
+      child: Text(S.of(context).save_data),
     );
   }
 }

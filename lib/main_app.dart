@@ -19,8 +19,8 @@ class MainApp extends StatelessWidget {
         localizationsDelegates: localizationsDelegates,
         supportedLocales: S.delegate.supportedLocales,
         locale: const Locale("ar"),
-        initialRoute: AppRoutes.home,
         onGenerateRoute: appRouter.generateRoute,
+        initialRoute: AppRoute.home,
       ),
     );
   }

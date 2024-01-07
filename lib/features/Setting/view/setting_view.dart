@@ -10,8 +10,9 @@ class SettingPageView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SettingBody(),
+    return Scaffold(
+      appBar: AppBar(),
+      body: const SettingBody(),
     );
   }
 }

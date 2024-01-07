@@ -13,7 +13,9 @@ class HomePageView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.settings))
+          IconButton(onPressed: () {
+            Naviga
+          }, icon: const Icon(Icons.settings))
         ],
       ),
       body: const HomePageBody(),

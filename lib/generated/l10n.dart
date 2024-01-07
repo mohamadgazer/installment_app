@@ -50,6 +50,7 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+
   /// `hi rhe`
   String get hi {
     return Intl.message(
@@ -651,31 +652,3 @@ class S {
       args: [],
     );
   }
-}
-
-class AppLocalizationDelegate extends LocalizationsDelegate<S> {
-  const AppLocalizationDelegate();
-
-  List<Locale> get supportedLocales {
-    return const <Locale>[
-      Locale.fromSubtags(languageCode: 'en'),
-      Locale.fromSubtags(languageCode: 'ar'),
-    ];
-  }
-
-  @override
-  bool isSupported(Locale locale) => _isSupported(locale);
-  @override
-  Future<S> load(Locale locale) => S.load(locale);
-  @override
-  bool shouldReload(AppLocalizationDelegate old) => false;
-
-  bool _isSupported(Locale locale) {
-    for (var supportedLocale in supportedLocales) {
-      if (supportedLocale.languageCode == locale.languageCode) {
-        return true;
-      }
-    }
-    return false;
-  }
-}

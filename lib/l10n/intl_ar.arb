@@ -46,12 +46,12 @@
          "not_valid_phone":"رقم هاتف غير صالح",
          "not_valid_username":"اسم مستخدم غير صالح",
          "not_valid_National_id":"رقم قومي غير صحيح",
-             "not_valid_email":"البريد الإلكتروني غير صالح",
-             "home_page":"الصفحة الرئيسية",
+         "not_valid_email":"البريد الإلكتروني غير صالح",
+         "home_page":"الصفحة الرئيسية",
              
-             "":"",
-             "debtor_list":"قائمة المدينين",
-             "debtor_id":"كود المدين",
+      
+         "debtor_list":"قائمة المدينين",
+         "debtor_id":"كود المدين",
              "add_date":"تاريخ الإضافة",
              "debtor_name":"اسم المدين",
              "phone_number":"رقم الهاتف",
@@ -62,6 +62,9 @@
              "select_theme":"اختر الثيم :",
              "address":"العنوان",
              "add":"اضف",
-             "areej":"أريج"
+             "areej":"أريج",
+    "esayCollectmony":"سهوله تحصيل الاموال",
+    "get_notifications_of_collection_dates":"ضمان الحصول على إشعارات بمواعيد تحصيل الاقساط",
+    "smooth_customer_data_entry_and_search":"سلاسة في إدخال بيانات العملاء والبحث عنهم"
     
     }

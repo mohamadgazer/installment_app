@@ -28,7 +28,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "add_date": MessageLookupByLibrary.simpleMessage("Date added"),
         "add_debtor": MessageLookupByLibrary.simpleMessage("Add debtor"),
         "address": MessageLookupByLibrary.simpleMessage("address"),
-        "areej": MessageLookupByLibrary.simpleMessage("areej"),
         "cant_be_Empty":
             MessageLookupByLibrary.simpleMessage("can\'t be Empty"),
         "cant_be_larger_than":
@@ -64,8 +63,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "enter_Your_Phone_Number":
             MessageLookupByLibrary.simpleMessage("Enter Your Phone Number"),
         "enter_email": MessageLookupByLibrary.simpleMessage("Enter Email"),
+        "esayCollectmony":
+            MessageLookupByLibrary.simpleMessage("Ease of collecting money"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("Forget password?"),
+        "get_notifications_of_collection_dates":
+            MessageLookupByLibrary.simpleMessage(
+                "Get notifications of collection dates"),
         "have_an_account":
             MessageLookupByLibrary.simpleMessage("Already have an account？"),
         "hi": MessageLookupByLibrary.simpleMessage("hi rhe"),
@@ -106,6 +110,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "sign_up": MessageLookupByLibrary.simpleMessage("sign up"),
         "skip_button": MessageLookupByLibrary.simpleMessage("skip"),
+        "smooth_customer_data_entry_and_search":
+            MessageLookupByLibrary.simpleMessage(
+                "Smooth customer data entry and search"),
         "them_condication": MessageLookupByLibrary.simpleMessage(
             "By creating an account you have\n to agree with our them & condication."),
         "verify_Email":

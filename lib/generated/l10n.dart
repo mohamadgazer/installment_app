@@ -642,11 +642,31 @@ class S {
     );
   }
 
-  /// `areej`
-  String get areej {
+  /// `Ease of collecting money`
+  String get esayCollectmony {
     return Intl.message(
-      'areej',
-      name: 'areej',
+      'Ease of collecting money',
+      name: 'esayCollectmony',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get notifications of collection dates`
+  String get get_notifications_of_collection_dates {
+    return Intl.message(
+      'Get notifications of collection dates',
+      name: 'get_notifications_of_collection_dates',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Smooth customer data entry and search`
+  String get smooth_customer_data_entry_and_search {
+    return Intl.message(
+      'Smooth customer data entry and search',
+      name: 'smooth_customer_data_entry_and_search',
       desc: '',
       args: [],
     );

@@ -29,7 +29,11 @@ class OnBoardingPageViewItem extends StatelessWidget {
               )),
         ),
         SizedBoxHelper.verticalBox(50),
-        Text(list[index].text),
+        Text(
+          list[index].text,
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 18.sp),
+        ),
       ],
     );
   }

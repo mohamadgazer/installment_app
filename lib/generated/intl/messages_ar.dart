@@ -70,7 +70,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة السر؟"),
         "get_notifications_of_collection_dates":
             MessageLookupByLibrary.simpleMessage(
-                "ضمان الحصول على إشعارات بمواعيد تحصيل الاقساط"),
+                "ضمان الحصول على إشعارات\nبمواعيد تحصيل الاقساط"),
         "have_an_account":
             MessageLookupByLibrary.simpleMessage(" تمتلك حساباً بالفعل؟"),
         "hi": MessageLookupByLibrary.simpleMessage("هلا"),
@@ -111,7 +111,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "skip_button": MessageLookupByLibrary.simpleMessage("تجاوز"),
         "smooth_customer_data_entry_and_search":
             MessageLookupByLibrary.simpleMessage(
-                "سلاسة في إدخال بيانات العملاء والبحث عنهم"),
+                "سلاسة في إدخال بيانات العملاء،\nوالبحث عنهم"),
         "them_condication": MessageLookupByLibrary.simpleMessage(
             "بإنشائك لحساب فإنك توافق على الشروط والاحكام"),
         "verify_Email":

@@ -13,7 +13,10 @@ class OnBoardingBody extends StatefulWidget {
 }
 
 class _OnBoardingBodyState extends State<OnBoardingBody> {
-  PageController controller = PageController(initialPage: 0);
+  PageController controller = PageController(
+    initialPage: 0,
+    // viewportFraction: 1.0,
+  );
 
   @override
   void initState() {
@@ -25,9 +28,17 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: PageView.builder(
+      itemCount: onboardingData(context).length,
       controller: controller,
       onPageChanged: (value) {
-        if (value > onboardingData(context).length) {}
+        print(value);
+        print("====================");
+        if (value >= onboardingData(context).length) {
+          controller.animateToPage(0,
+              duration: const Duration(milliseconds: 300),
+              curve: Curves.easeInCirc);
+          setState(() {});
+        }
       },
       itemBuilder: (context, index) {
         return OnBoardingPageViewItem(

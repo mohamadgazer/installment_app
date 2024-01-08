@@ -12,14 +12,14 @@ class OnBoardingModel {
 List<OnBoardingModel> onboardingData(BuildContext context) {
   List<OnBoardingModel> onboardingData = [
     OnBoardingModel(
+        text: S.of(context).smooth_customer_data_entry_and_search,
+        image: AppImageManger.onboarding_3),
+    OnBoardingModel(
         text: S.of(context).esayCollectmony,
         image: AppImageManger.onboarding_1),
     OnBoardingModel(
         text: S.of(context).get_notifications_of_collection_dates,
         image: AppImageManger.onboarding_2),
-    OnBoardingModel(
-        text: S.of(context).smooth_customer_data_entry_and_search,
-        image: AppImageManger.onboarding_3),
   ];
   return onboardingData;
 }

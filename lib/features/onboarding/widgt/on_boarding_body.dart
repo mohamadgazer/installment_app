@@ -24,16 +24,23 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
     super.initState();
   }
 
+  int currentPage = 0;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: PageView.builder(
       itemCount: onboardingData(context).length,
       controller: controller,
+      onPageChanged: (value) {
+        currentPage = value;
+        setState(() {});
+      },
       itemBuilder: (context, index) {
         return OnBoardingPageViewItem(
           list: onboardingData(context),
           index: index,
+          currentPage: currentPage,
         );
       },
     ));

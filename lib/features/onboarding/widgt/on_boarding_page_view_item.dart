@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:installment/core/app_text_style_manger.dart';
 import 'package:installment/core/helper/sized_box_helper.dart';
 import 'package:installment/features/onboarding/data/onboarding_local_data.dart';
 
+import 'on_boarding_image.dart';
+import 'on_boarding_page_view_dots.dart';
+import 'onboarding_text.dart';
+
 class OnBoardingPageViewItem extends StatelessWidget {
   final int index;
+  final int currentPage;
   final List<OnBoardingModel> list;
   const OnBoardingPageViewItem({
     super.key,
     required this.index,
     required this.list,
+    required this.currentPage,
   });
 
   @override
@@ -18,23 +22,11 @@ class OnBoardingPageViewItem extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          width: 300.w,
-          height: 300.h,
-          decoration: BoxDecoration(
-              color: Colors.amber,
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage(list[index].image),
-              )),
-        ),
+        OnBoardingImage(list: list, index: index),
         SizedBoxHelper.verticalBox(20),
-        Text(
-          list[index].text,
-          textAlign: TextAlign.center,
-          style: AppTextStyleManger.size18FontWidgtsimiBold,
-        ),
+        OnboardingText(list: list, index: index),
+        SizedBoxHelper.verticalBox(50),
+        OnBoardingPageViewDots(list: list, currentPage: currentPage)
       ],
     );
   }

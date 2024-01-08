@@ -29,7 +29,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "add_date": MessageLookupByLibrary.simpleMessage("تاريخ الإضافة"),
         "add_debtor": MessageLookupByLibrary.simpleMessage("إضافة مدين"),
         "address": MessageLookupByLibrary.simpleMessage("العنوان"),
-        "areej": MessageLookupByLibrary.simpleMessage("أريج"),
         "cant_be_Empty":
             MessageLookupByLibrary.simpleMessage("لا يجب ان يكون الحقل فارغاً"),
         "cant_be_larger_than":
@@ -65,8 +64,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("ادخل رقم هاتفك"),
         "enter_email":
             MessageLookupByLibrary.simpleMessage("ادخل البريد الإلكتروني"),
+        "esayCollectmony":
+            MessageLookupByLibrary.simpleMessage("سهوله تحصيل الاموال"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة السر؟"),
+        "get_notifications_of_collection_dates":
+            MessageLookupByLibrary.simpleMessage(
+                "ضمان الحصول على إشعارات\nبمواعيد تحصيل الاقساط"),
         "have_an_account":
             MessageLookupByLibrary.simpleMessage(" تمتلك حساباً بالفعل؟"),
         "hi": MessageLookupByLibrary.simpleMessage("هلا"),
@@ -105,6 +109,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "sign_up": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "skip_button": MessageLookupByLibrary.simpleMessage("تجاوز"),
+        "smooth_customer_data_entry_and_search":
+            MessageLookupByLibrary.simpleMessage(
+                "سلاسة في إدخال بيانات العملاء،\nوالبحث عنهم"),
         "them_condication": MessageLookupByLibrary.simpleMessage(
             "بإنشائك لحساب فإنك توافق على الشروط والاحكام"),
         "verify_Email":

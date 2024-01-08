@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnBoardingPageViewItem extends StatelessWidget {
   final int index;
@@ -14,8 +15,8 @@ class OnBoardingPageViewItem extends StatelessWidget {
       children: [
         Text("index: $index"),
         Container(
-          width: 200,
-          height: 200,
+          width: 200.w,
+          height: 200.h,
           decoration: const BoxDecoration(
             color: Colors.amber,
             shape: BoxShape.circle,

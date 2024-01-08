@@ -17,9 +17,14 @@ class OnBoardingSignButtons extends StatelessWidget {
         CustomElevatedButton(
           color: AppColorManger.primary,
           text: S.of(context).sign_up,
+          onPressed: () {},
         ),
         SizedBoxHelper.horizontalBox(10),
-        ElevatedButton(onPressed: () {}, child: Text(S.of(context).log_In)),
+        CustomElevatedButton(
+          color: AppColorManger.gray,
+          text: S.of(context).log_In,
+          onPressed: () {},
+        ),
       ],
     );
   }

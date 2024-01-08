@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:installment/core/color/app_color_manger.dart';
+import 'package:installment/core/helper/context_helper.dart';
 import 'package:installment/core/helper/sized_box_helper.dart';
+import 'package:installment/features/homePage/view/home_page_view.dart';
 import 'package:installment/features/onboarding/data/onboarding_local_data.dart';
+import 'package:installment/features/onboarding/widgt/custom_elevated_button.dart';
+import 'package:installment/generated/l10n.dart';
 
 import 'on_boarding_image.dart';
 import 'on_boarding_page_view_dots.dart';
@@ -35,6 +40,15 @@ class OnBoardingPageViewItem extends StatelessWidget {
               SizedBoxHelper.verticalBox(50),
               currentPage == list.length - 1
                   ? const OnBoardingSignButtons()
+                  : const SizedBox.shrink(),
+              currentPage == list.length - 1
+                  ? CustomElevatedButton(
+                      color: AppColorManger.gray,
+                      text: S.of(context).home_page,
+                      onPressed: () {
+                        context.pushReplacementNamed(HomePageView.id);
+                      },
+                    )
                   : const SizedBox.shrink(),
             ],
           ),

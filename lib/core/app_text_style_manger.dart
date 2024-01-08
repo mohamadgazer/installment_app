@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextStyleManger {
-  static TextStyle size28FontWidgtsimiBold = TextStyle(
-    fontSize: 28.sp,
+  static TextStyle size18FontWidgtsimiBold = TextStyle(
+    fontSize: 18.sp,
     fontFamily: "Rubik",
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.w400,
   );
 }

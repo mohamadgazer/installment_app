@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:installment/core/app_text_style_manger.dart';
 import 'package:installment/core/helper/sized_box_helper.dart';
 import 'package:installment/features/onboarding/data/onboarding_local_data.dart';
 
@@ -28,11 +29,11 @@ class OnBoardingPageViewItem extends StatelessWidget {
                 image: AssetImage(list[index].image),
               )),
         ),
-        SizedBoxHelper.verticalBox(50),
+        SizedBoxHelper.verticalBox(20),
         Text(
           list[index].text,
           textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.bodySmall,
+          style: AppTextStyleManger.size18FontWidgtsimiBold,
         ),
       ],
     );

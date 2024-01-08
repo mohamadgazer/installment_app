@@ -41,6 +41,7 @@ class OnBoardingPageViewItem extends StatelessWidget {
               currentPage == list.length - 1
                   ? const OnBoardingSignButtons()
                   : const SizedBox.shrink(),
+              SizedBoxHelper.verticalBox(10),
               currentPage == list.length - 1
                   ? CustomElevatedButton(
                       color: AppColorManger.gray,

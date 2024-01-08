@@ -4,6 +4,7 @@ import 'package:installment/features/onboarding/data/onboarding_local_data.dart'
 
 import 'on_boarding_image.dart';
 import 'on_boarding_page_view_dots.dart';
+import 'on_boarding_sign_buttons.dart';
 import 'onboarding_text.dart';
 
 class OnBoardingPageViewItem extends StatelessWidget {
@@ -19,15 +20,26 @@ class OnBoardingPageViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        OnBoardingImage(list: list, index: index),
-        SizedBoxHelper.verticalBox(20),
-        OnboardingText(list: list, index: index),
-        SizedBoxHelper.verticalBox(50),
-        OnBoardingPageViewDots(list: list, currentPage: currentPage)
-      ],
+    return Center(
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.all(20),
+        child: Center(
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              OnBoardingImage(list: list, index: index),
+              SizedBoxHelper.verticalBox(20),
+              OnboardingText(list: list, index: index),
+              SizedBoxHelper.verticalBox(50),
+              OnBoardingPageViewDots(list: list, currentPage: currentPage),
+              SizedBoxHelper.verticalBox(50),
+              currentPage == list.length - 1
+                  ? const OnBoardingSignButtons()
+                  : const SizedBox.shrink(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

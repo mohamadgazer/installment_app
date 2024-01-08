@@ -17,7 +17,7 @@ class OnboardingText extends StatelessWidget {
     return Text(
       list[index].text,
       textAlign: TextAlign.center,
-      style: AppTextStyleManger.size18FontWidgtsimiBold,
+      style: AppTextStyleManger.size15FontWidgtsimiBold,
     );
   }
 }

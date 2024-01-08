@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:installment/core/app_local.dart';
@@ -11,7 +12,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var themeData = ThemeData();
+    var themeData = ThemeData.dark();
     // .copyWith(
     //   textTheme: const TextTheme(
     //     bodyLarge: TextStyle(
@@ -49,7 +50,18 @@ class MainApp extends StatelessWidget {
         //route
         onGenerateRoute: appRouter.generateRoute,
         initialRoute: Routes.onBoarding,
+        //scrool
+        scrollBehavior: AppScrollBehavior(),
       ),
     );
   }
+}
+
+class AppScrollBehavior extends MaterialScrollBehavior {
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+        PointerDeviceKind.touch,
+        PointerDeviceKind.mouse,
+        PointerDeviceKind.trackpad,
+      };
 }

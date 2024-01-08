@@ -21,7 +21,7 @@ class OnBoardingImage extends StatelessWidget {
           color: Colors.amber,
           shape: BoxShape.circle,
           image: DecorationImage(
-            fit: BoxFit.cover,
+            fit: BoxFit.contain,
             image: AssetImage(list[index].image),
           )),
     );

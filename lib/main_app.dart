@@ -11,14 +11,42 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var themeData = ThemeData();
+    // .copyWith(
+    //   textTheme: const TextTheme(
+    //     bodyLarge: TextStyle(
+    //       color: Colors.black,
+    //       fontFamily: 'Rubik',
+    //       fontSize: 16.0,
+    //       fontWeight: FontWeight.normal,
+    //     ),
+    //     bodyMedium: TextStyle(
+    //       color: Colors.black,
+    //       fontFamily: 'Rubik',
+    //       fontSize: 14.0,
+    //       fontWeight: FontWeight.normal,
+    //     ),
+    //     displayLarge: TextStyle(
+    //       color: Colors.black,
+    //       fontFamily: 'Rubik',
+    //       fontSize: 32.0,
+    //       fontWeight: FontWeight.bold,
+    //     ),
+    //   ),
+    // );
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
+        //theme
+        theme: themeData,
+        //local
         debugShowCheckedModeBanner: false,
         localizationsDelegates: localizationsDelegates,
         supportedLocales: S.delegate.supportedLocales,
         locale: const Locale("ar"),
+
+        //route
         onGenerateRoute: appRouter.generateRoute,
         initialRoute: Routes.onBoarding,
       ),

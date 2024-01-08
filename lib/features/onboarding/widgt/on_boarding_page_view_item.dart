@@ -32,7 +32,7 @@ class OnBoardingPageViewItem extends StatelessWidget {
         Text(
           list[index].text,
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 18.sp),
+          style: Theme.of(context).textTheme.bodySmall,
         ),
       ],
     );

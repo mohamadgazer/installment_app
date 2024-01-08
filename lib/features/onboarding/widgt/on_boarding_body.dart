@@ -30,16 +30,6 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
         child: PageView.builder(
       itemCount: onboardingData(context).length,
       controller: controller,
-      onPageChanged: (value) {
-        print(value);
-        print("====================");
-        if (value >= onboardingData(context).length) {
-          controller.animateToPage(0,
-              duration: const Duration(milliseconds: 300),
-              curve: Curves.easeInCirc);
-          setState(() {});
-        }
-      },
       itemBuilder: (context, index) {
         return OnBoardingPageViewItem(
           list: onboardingData(context),
